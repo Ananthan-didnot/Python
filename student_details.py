@@ -1,4 +1,6 @@
-
+'''Auther : Ananthakrishnan K V
+Date : 01-10-2024
+Python programe to get student details'''
 
 
 name=input("Enter the student name:")

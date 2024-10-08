@@ -1,24 +1,27 @@
-#author : Ananthakrishnan K V
-#date : 06-10-2024
-#calculator
+'''
+AUther: Ananthakrishnan K V
+Date: 08-10-2024
+A simple calculator
+'''
 
-number1 = float(input("Enter 1st number"))
-number2 = float(input("Enter 2nd number"))
-operator = input("Enter an operator (+,-,*,/)")
+num1 = float(input("Enter the first number: "))
+num2= float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
 
-if operator =="+":
-    result=(number1+number2)
-    print(result)
+sum = (num1+num2)
+print(f"The sum of {num1} and {num2} is: {sum}")
 
-elif operator=="-":
-    result=(number1-number2)
-    print(result)
+difference = (num2-num1)
+print(f"The difference when {num1} is subtracted from {num2} is: {difference}")
 
-elif operator=="*":
-    result=(number1*number2)
-    print(result)
+product = (num1*num2)
+print(f"The product of {num1} and {num2} is: {product}")
 
-elif operator=="/":
-    result=(number1/number2)
-    print(round(result, 3))
-else: print(f"{operator} is not valid operator")
+division = round((num1/num2),2)
+print(f"The quotient when {num1} is divided by {num2} is: {division}")
+
+mod = (num1%num2)
+print(f"The remainder when {num1} is divided by {num2} is: {mod}")
+
+result = (num1 + num2) * num3 / 2
+print(f"The result of ({num1} + {num2}) * {num3} / 2 is: {result}")

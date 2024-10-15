@@ -8,5 +8,7 @@ is positive or negative
 number = int(input("Enter a a number:"))
 if number>0:
     print(f"The number {number} is Positive")
-else:
+elif number<0:
     print(f"The number {number} is Negative")
+else:
+    print(f"The given number {number} is zero")

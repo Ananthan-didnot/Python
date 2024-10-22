@@ -7,14 +7,14 @@ Python program to convert temperature values back and forth between Celsius and 
 '''
 
 
-temp = float(input("Enter temperature: "))
-unit = input("Is this in (C)elcius or (F)ahrenheit: ")
+temperature = float(input("Enter temperature: "))
+scale = input("Is this in (C)elcius or (F)ahrenheit: ")
 
-if unit == 'C' or unit== 'c':
-    f=(9/5*temp)+32
-    print(f"{temp} celcius is {f} fahrenheit")
-elif unit =='F' or unit == "f":
-    c=5/9*(temp-32)
-    print(f"{temp} fahrenheit is {c} celcius")
+if scale == 'C' or scale== 'c':
+    f=(9/5*temperature)+32
+    print(f"{temperature} celcius is {f} fahrenheit")
+elif scale =='F' or scale == "f":
+    c=5/9*(temperature-32)
+    print(f"{temperature} fahrenheit is {c} celcius")
 else:
-    print(f"{unit} is invalid input")
+    print(f"{scale} is invalid input")
